@@ -1,0 +1,392 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: arial;
+}
+html{
+    overflow-x: hidden;
+}
+body{
+    overflow-x: hidden;
+    background-color: rgb(249, 250, 250);
+}
+header{
+    width: 100%;
+    padding-top: 30px;
+    height: auto;
+    
+    justify-content:space-between;
+    display: flex;
+    
+    
+    background: rgb(138, 137, 137);
+    position: fixed;
+}
+.logo{
+    color: rgb(223, 221, 221);
+    margin-left: 10px;
+}
+.searchbox{
+    
+    height: 60px;
+    position: relative;
+    border: none;
+    border-radius: 15px;
+    padding-left: 5px;
+    color:grey;
+}
+.searchbox input{
+    width: 260px;
+    height: 30px;
+    border-radius: 5px;
+}
+.searchbox button{
+    height: 30px;
+    width:70px;
+    border-radius: 5px;
+cursor: pointer;
+
+border-color: black;
+
+background-color: transparent;
+text-decoration: none;
+
+}
+.searchbox:hover{
+    border: none;
+}
+.searchbox button:hover{
+    background-color: green;
+}
+header ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+header ul li{
+    list-style: none;
+}
+header ul li a{
+    text-decoration: none;
+color: white;
+padding: 10px ;
+}
+header ul li a:hover{
+    border-bottom: 2px solid green;
+}
+
+.main-card .card{
+    padding-top: 130px;
+}
+.card{
+    background-color: rgb(235, 234, 234);
+    width: 350px;
+    height: auto;
+    margin: 40px 20px;
+    padding: 22px 30px;
+    border-radius: 5px;
+    line-height: 1.8;
+    
+    justify-content: space-between;
+    box-shadow: 0 7px 7px gray;
+    font-size: small;
+}
+.card img{
+    width: 200px;
+    height: auto;
+    height: 200px;
+    background-color:  transparent;
+    /* object-fit: cover; */
+}
+.main-card{
+    padding-top: 130px;
+    margin-left: auto;
+    margin-left: auto;
+    display: flex;
+    gap: 2em;
+    box-shadow: border-box;
+    flex-wrap: wrap;
+}
+#Readmore{
+    background-color: teal;
+    color: #fff;
+    float: right;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin: 15px;
+}
+
+#ch{
+    display: none;
+}
+label{
+    display: inline-block;
+    cursor: pointer;
+}
+.btn button{
+    background-color: rgb(6, 107, 107);
+    color: rgb(241, 236, 236);
+}
+.btn button:hover{
+    background-color: rgb(4, 223, 4);
+    color: blue;
+}
+
+/* #Readmore{
+    background-color: teal;
+    color: #fff;
+    float: right;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin: 15px;
+} */
+
+/* #ch{
+    display: none;
+} */
+/* label{
+    display: inline-block;
+    cursor: pointer;
+} */
+.btn button{
+    background-color: rgb(6, 107, 107);
+    color: rgb(241, 236, 236);
+}
+.btn button:hover{
+    background-color: rgb(4, 223, 4);
+    color: blue;
+}
+.card__read-more{
+    display: block;
+    opacity: 0;
+    height: 0;
+    transition: all 0.5s;
+}
+.card__read-more--open{
+    display: block;
+    opacity: 1;
+    height: 7rem;
+}
+.read-more-btn{
+    display: inline-block;
+    color: rgb(47, 47, 250);
+    background-color: rgb(138, 137, 137);
+    padding: 0.6rem 1.5rem;
+    font-size: 1em;
+    position: relative;
+    border-radius: 9px;
+    cursor: pointer;
+}
+.read-more-btn:hover{
+    transform: translateY(3px);
+    background-color: green;
+    color: rgb(111, 111, 241);
+}
+.menu{
+    flex-direction: row;
+}
+#chk1{
+    display: none;
+}
+#chk1:checked ~ ul{
+    right: 0;
+}
+.mobile-nav-icon{
+    width: 2rem;
+    height: 2rem;
+    color: white;
+
+}
+.mobile-navbar-btn{
+cursor: pointer;
+background: transparent;
+display: none;
+}
+.mobile-nav-icon[name="close"]{
+    display: none;
+}
+.navbar{
+    display: flex;
+}
+
+/* 
+@media(max-with:468px){
+    .main-card{
+        /* font-size: auto; */
+        /* padding: 10%; */
+        /* height: auto; */
+        /* flex-direction: column; */
+        /* box-sizing: border-box; */
+    /* } */
+    /* .card{ */
+        /*/
+    header{
+        justify-content:space-around;
+        flex-direction: column;
+    }
+}
+@media(min-with:769px) and (max-with:1023px){
+    .main-card{
+        /* font-size: auto; */
+        /* padding: 10%; */
+        /* height: auto; */
+        /* width: 30%; */
+        /* flex-direction: row; */
+        /* box-sizing: border-box; */
+    /* }
+     .card{
+        width: 45%;
+    } */
+/* } */ 
+
+@media  (max-width:915px){
+    header{
+        /* justify-content:space-around; */
+        flex-direction: column;
+    }
+    .searchbox button{
+        position: absolute;
+        /* font-size: large; */
+        height: 30px;
+        width:100px;
+    }
+    .searchbox input{
+        width: 400px;
+        height: 50px;
+        border-radius: 5px;
+    }
+    .searchbox button{
+        height: 50px;
+        width:100px;
+        border-radius: 5px;
+    cursor: pointer;
+    
+    border-color: black;
+    
+    background-color: transparent;
+    text-decoration: none;
+    
+    }
+    /* header ul{
+        position: fixed;
+        top: 100px;
+        background-color: rgb(155, 152, 152);
+        flex-direction: column;
+        right: 0;
+        /* padding-right: 90px; */
+        /* align-items: left; */
+        /* text-align: start;
+        width: 40%;
+        height: 50%;
+        transition: right 0.5s linear;
+        font-size: large; */
+    /* } */ 
+    .header{
+        position: relative;
+    }
+    /* .read-more-btn{
+
+    } */
+    .mobile-navbar-btn{
+        display: block;
+        z-index: 999;
+        border: 3px;
+        text-align:right;
+        padding-right: 70px;
+        /* border: 3px solid white; */
+     
+
+    }
+    .mobile-navbar-btn .close{
+        
+        text-align:right;
+        
+    }
+    .navbar-list{
+        flex-direction: column;
+        align-items: center;
+        width: 40%;
+        height: 70%;
+        transition: right 0.5s linear;
+        font-size: large; 
+    }
+    .navbar{
+        width: 100%;
+        height: 70vh;
+        background-color: rgb(155, 152, 152);
+        position: absolute;
+        top:0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+    
+  /* to get the transition */
+
+  transform: translateX(100%);
+  transition: all 0.5s linear;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+    }
+    .searchbox input{
+        width: 200px;
+        height: 30px;
+      
+
+    }
+    .searchbox button{
+        height: 30px;
+        width:50px;
+        border-radius: 5px;
+    cursor: pointer;
+    
+    border-color: black;
+    
+    background-color: transparent;
+    text-decoration: none;
+    
+    }
+    .card{
+        width: 100%;
+        font-size: 30px;
+        overflow: auto;
+    }
+    .active .navbar{
+        transform: translateX(0);
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+
+    }
+    .active .mobile-navbar-btn .mobile-nav-icon[name="close"]{
+        display: block;
+    }
+    .active .mobile-navbar-btn .mobile-nav-icon[name="menu"]{
+        display: none;
+    }
+   
+    
+}
+/* @media  (max-width:800px) and (max-width:1200){
+    .card{
+        width: 55%;
+        font-size: 65px;
+    } 
+}
+
+@media(max-with:768px){
+    .main-card{
+        /* display: block; */
+        /* width: 100%; */
+      
+        /* flex-direction: column; */
+        /* box-sizing: border-box; */
+    /* }
+     .card{
+        width: 55%;
+        font-size: large;
+    } 
+/* } */  

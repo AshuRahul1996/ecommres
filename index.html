@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+        integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header active">
+
+
+            <div class="logo">
+                <h3>Ecommerce App</h3>
+            </div>
+            <div class="na">
+                <nav class="navbar">
+                    <ul class="navbar-list">
+                        <li><a class="navbar-link" href="#">Home</a></li>
+                        <li><a class="navbar-link" href="#">Add Product</a></li>
+                        <li><a class="navbar-link" href="#">Cart</a></li>
+                        <li><a class="navbar-link" href="#">Contact Us</a></li>
+                        <li><a class="navbar-link" href="#">Dropdown</a></li>
+                    </ul>
+                    <div class="searchbox">
+                        <form action="">
+                            <input type="text" name="search" id="search-item" placeholder="Search" onkeyup="se()">
+                            <button>Search</button>
+                        </form>
+                    </div>
+                </nav>
+                <div class="mobile-navbar-btn">
+                    <ion-icon name="menu" class="mobile-nav-icon"></ion-icon>
+                    <ion-icon name="close" class="mobile-nav-icon"></ion-icon>
+
+                </div>
+
+            </div>
+
+        </header>
+        <div class="main-card" id="main-card">
+
+
+            <div class="card">
+                <img src="https://fakestoreapi.com/img/51eg55uWmdL._AC_UX679_.jpg" alt="" class="card__img" />
+                <div class="contents">
+                    <h2 class="card__name">Opna Women's Short Sleeve Moisture</h2>
+
+                    <p>100% Polyester, Machine wash, 100% cationic polyester interlock,
+                        Machine Wash & Pre Shrunk for a Great Fit, Lightweight, roomy and highly breathable with
+
+                        <span class="card__read-more"> Soft Lightweight Fabric with
+                            comfortable V-neck collar and a slimmer fit,"</span>
+                    </p>
+                    <p class="read-more-btn">Read More..</p>
+                    <br>
+                    price- <del>$45</del> $39.99
+                    <br>
+                    <br>
+                </div>
+
+                <div class="btn" id="btn">
+                    <button onclick="getValue()">
+                        Add to Card
+                    </button>
+
+                    <div class="btn" id="list">
+                        <button onclick="getList()">
+                            Add to wishlist
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://fakestoreapi.com/img/61pHAEJ4NML._AC_UX679_.jpg" alt="" class="card__img" />
+                <div class="contents">
+                    <h2 class="card__name">DANVOUY Womens T Shirt Casual Cotton Short</h2>
+
+                    <p>95%Cotton,5%Spandex, Features: Casual, Short Sleeve, Letter Print,V-Neck,Fashion Tees
+                        <span class="card__read-more"> The fabric
+                            is soft and has some stretch., Occasion: Casual/Office/Beach/School/Home/Street."</span>
+                    </p>
+                    <p class="read-more-btn">Read More..</p>
+                    <br>
+                    price- <del>$35</del> $29.95
+                    <br>
+                    <br>
+                </div>
+
+                <div class="btn" id="btn">
+                    <button onclick="getValue()">
+                        Add to Card
+                    </button>
+
+                    <div class="btn" id="list">
+                        <button onclick="getList()">
+                            Add to wishlist
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg" alt="" class="card__img" />
+                <div class="contents">
+                    <h2 class="card__name">Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops</h2>
+
+                    <p>Your perfect pack for everyday use and walks in the forest.
+                        <span class="card__read-more"> Stash your laptop (up to 15 inches) in the padded sleeve, your
+                            everyday"</span>
+                    </p>
+                    <p class="read-more-btn">Read More..</p>
+                    <br>
+                    price- <del>$100</del> $56.99
+                    <br>
+                    <br>
+                </div>
+
+                <div class="btn" id="btn">
+                    <button onclick="getValue()">
+                        Add to Card
+                    </button>
+
+                    <div class="btn" id="list">
+                        <button onclick="getList()">
+                            Add to wishlist
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://fakestoreapi.com/img/71z3kpMAYsL._AC_UY879_.jpg" alt="" class="card__img" />
+                <div class="contents">
+                    <h2 class="card__name">MBJ Women's Solid Short Sleeve Boat Neck V </h2>
+
+                    <p>95% RAYON 5% SPANDEX, Made in USA or Imported, Do Not Bleach, Lightweight fabric with great
+
+                        <span class="card__read-more"> Ribbed on sleeves and neckline / Double stitching on bottom
+                            hem","category":"women's clothing"</span>
+                    </p>
+                    <p class="read-more-btn">Read More..</p>
+                    <br>
+                    price- <del>$15</del> $9.85
+                    <br>
+                    <br>
+                </div>
+
+                <div class="btn" id="btn">
+                    <button onclick="getValue()">
+                        Add to Card
+                    </button>
+
+                    <div class="btn" id="list">
+                        <button onclick="getList()">
+                            Add to wishlist
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://fakestoreapi.com/img/71HblAHs5xL._AC_UY879_-2.jpg" alt="" class="card__img" />
+                <div class="contents">
+                    <h2 class="card__name">Rain Jacket Women Windbreaker Striped Climbing Raincoats</h2>
+
+                    <p>Lightweight perfet for trip or casual wear---Long sleeve with hooded, adjustable drawstring waist
+                        design.
+
+                        <span class="card__read-more">Button and zipper front closure raincoat, fully stripes Lined and
+                            The Raincoat has 2 side
+                            pockets are a good size to hold all kinds of things, it covers the hips, and the hood is
+                            .</span>
+                    </p>
+                    <p class="read-more-btn">Read More..</p>
+                    <br>
+                    price- <del>$45</del> $39.99
+                    <br>
+                    <br>
+                </div>
+
+                <div class="btn" id="btn">
+                    <button onclick="getValue()">
+                        Add to Card
+                    </button>
+
+                    <div class="btn" id="list">
+                        <button onclick="getList()">
+                            Add to wishlist
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://fakestoreapi.com/img/81XH0e8fefL._AC_UY879_.jpg" alt="" class="card__img" />
+                <div class="contents">
+                    <h2 class="card__name">Lock and Love Women's Removable Hooded Faux Leather Moto Biker Jacket</h2>
+
+                    <p>100% POLYURETHANE(shell) 100% POLYESTER(lining) 75% POLYESTER 25% COTTON (SWEATER),
+                        Faux leather material for style and comfort / 2 pockets of front,
+                        <span class="card__read-more"> 2-For-One Hooded denim style
+                            faux leather jacket, "</span>
+                    </p>
+                    <p class="read-more-btn">Read More..</p>
+                    <br>
+                    price- <del>$15</del> $10.95
+                    <br>
+                    <br>
+                </div>
+
+                <div class="btn" id="btn">
+                    <button onclick="getValue()">
+                        Add to Card
+                    </button>
+
+                    <div class="btn" id="list">
+                        <button onclick="getList()">
+                            Add to wishlist
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://fakestoreapi.com/img/51Y5NI-I5jL._AC_UX679_.jpg" alt="" class="card__img" />
+                <div class="contents">
+                    <h2 class="card__name">BIYLACLESEN Women's 3-in-1 Snowboard Jacket Winter Coats</h2>
+
+                    <p>Note:The Jackets is US standard size, Please choose size as your usual wear Material: 100%
+                        Polyester; Detachable Liner Fabric: Warm Fleece. Detachable Functional Liner: Skin Friendly,
+
+                        <span class="card__read-more"> Lightweigt and Warm.Stand Collar Liner jacket, keep you warm in
+                            cold weather. Zippered Pockets:
+                            2 Zippered Hand Pockets, 2 Zippered Pockets on Chest (enough to keep cards or keys)and 1
+                            Hidden
+                            Pocket Inside.
+                            climates</span>
+                    </p>
+                    <p class="read-more-btn">Read More..</p>
+                    <br>
+                    price- <del>$100</del> $56.99
+                    <br>
+                    <br>
+                </div>
+
+                <div class="btn" id="btn">
+                    <button onclick="getValue()">
+                        Add to Card
+                    </button>
+
+                    <div class="btn" id="list">
+                        <button onclick="getList()">
+                            Add to wishlist
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://fakestoreapi.com/img/81Zt42ioCgL._AC_SX679_.jpg" alt="" class="card__img" />
+                <div class="contents">
+                    <h2 class="card__name">Samsung 49-Inch CHG90 144Hz Curved Gaming Monitor (LC49HG90DMNXZA) – Super
+                        Ultrawide Screen QLED</h2>
+
+                    <p>49 INCH SUPER ULTRAWIDE 32:9 CURVED GAMING MONITOR with dual 27 inch screen side by side
+                        QUANTUM DOT (QLED) TECHNOLOGY, HDR support and factory calibration provides stunningly realistic
+
+                        <span class="card__read-more">and accurate color and contrast 144HZ HIGH REFRESH RATE and 1ms
+                            ultra fast response time work to
+                            eliminate motion blur,
+                            ghosting, and reduce input lag</span>
+                    </p>
+                    <p class="read-more-btn">Read More..</p>
+                    <br>
+                    price- <del>$1100</del> $999.99
+                    <br>
+                    <br>
+                </div>
+
+                <div class="btn" id="btn">
+                    <button onclick="getValue()">
+                        Add to Card
+                    </button>
+
+                    <div class="btn" id="list">
+                        <button onclick="getList()">
+                            Add to wishlist
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="card">
+                <img src="https://fakestoreapi.com/img/81QpkIctqPL._AC_SX679_.jpg" alt="" class="card__img" />
+                <div class="contents">
+                    <h2 class="card__name">Acer SB220Q bi 21.5 inches Full HD (1920 x 1080) IPS Ultra-Thin</h2>
+
+                    <p>21. 5 inches Full HD (1920 x 1080) widescreen IPS display And Radeon free Sync technology.
+                        No compatibility for VESA Mount Refresh Rate: 75Hz - Using HDMI port Zero-frame design |
+                        <span class="card__read-more"> ultra-thin | 4ms response time | IPS panel Aspect ratio - 16: 9.
+                            Color Supported - 16. 7 million
+                            colors
+                            Vertical viewing angle-178 degree 75 hertz"</span>
+                    </p>
+                    <p class="read-more-btn">Read More..</p>
+                    <br>
+                    price- <del>$620</del> $599
+                    <br>
+                    <br>
+                </div>
+
+                <div class="btn" id="btn">
+                    <button onclick="getValue()">
+                        Add to Card
+                    </button>
+
+                    <div class="btn" id="list">
+                        <button onclick="getList()">
+                            Add to wishlist
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://fakestoreapi.com/img/61mtL65D4cL._AC_SX679_.jpg" alt="" class="card__img" />
+                <div class="contents">
+                    <h2 class="card__name">WD 4TB Gaming Drive Works with Playstation 4 Portable External Hard Drive
+                    </h2>
+
+                    <p>Expand your PS4 gaming experience, Play anywhere Fast and easy, setup
+                        <span class="card__read-more"> Sleek design with high capacity, 3-year manufacturer's limited
+                            warranty","category":"electronics</span>
+                    </p>
+                    <p class="read-more-btn">Read More..</p>
+                    <br>
+                    price- <del>$120</del> $114
+                    <br>
+                    <br>
+                </div>
+
+                <div class="btn" id="btn">
+                    <button onclick="getValue()">
+                        Add to Card
+                    </button>
+
+                    <div class="btn" id="list">
+                        <button onclick="getList()">
+                            Add to wishlist
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://fakestoreapi.com/img/71kWymZ+c+L._AC_SX679_.jpg" alt="" class="card__img" />
+                <div class="contents">
+                    <h2 class="card__name">Silicon Power 256GB SSD 3D NAND A55 SLC Cache Performance Boost SATA III 2.5
+                    </h2>
+
+                    <p>3D NAND flash are applied to deliver high transfer speeds Remarkable transfer speeds that enable
+                        faster bootup and improved overall system performance.
+                        <span class="card__read-more">The advanced SLC Cache Technology allows
+                            performance boost
+                            to provide the optimized performance and enhanced reliability.</span>
+                    </p>
+                    <p class="read-more-btn">Read More..</p>
+                    <br>
+                    price- <del>$115</del> $109.95
+                    <br>
+                    <br>
+                </div>
+
+                <div class="btn" id="btn">
+                    <button onclick="getValue()">
+                        Add to Card
+                    </button>
+
+                    <div class="btn" id="list">
+                        <button onclick="getList()">
+                            Add to wishlist
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://fakestoreapi.com/img/61U7T1koQqL._AC_SX679_.jpg" alt="" class="card__img" />
+                <div class="contents">
+                    <h2 class="card__name">SanDisk SSD PLUS 1TB Internal SSD - SATA III 6 Gb/s</h2>
+
+                    <p>Easy upgrade for faster boot up, shutdown, application load and response (As compared to 5400 RPM
+                        SATA 2.5” hard drive
+                        <span class="card__read-more"> Based on published specifications and internal benchmarking tests
+                            using
+                            PCMark vantage scores) Boosts burst write performance, to 535MB/s/450MB/s</span>
+                    </p>
+                    <p class="read-more-btn">Read More..</p>
+                    <br>
+                    price- <del>$115</del> $109.95
+                    <br>
+                    <br>
+                </div>
+
+                <div class="btn" id="btn">
+                    <button onclick="getValue()">
+                        Add to Card
+                    </button>
+
+                    <div class="btn" id="list">
+                        <button onclick="getList()">
+                            Add to wishlist
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://fakestoreapi.com/img/61IBBVJvSDL._AC_SY879_.jpg" alt="" class="card__img" />
+                <div class="contents">
+                    <h2 class="card__name">WD 2TB Elements Portable External Hard Drive - USB 3.0 </h2>
+
+                    <p>USB 3.0 and USB 2.0 Compatibility Fast data transfers Improve PC Performance High Capacity;
+                        Compatibility Formatted NTFS
+                        <span class="card__read-more"> Windows 10, Windows 8.1, Windows 7; Reformatting may be
+                            required for other operating systems;
+                        </span>
+                    </p>
+                    <p class="read-more-btn">Read More..</p>
+                    <br>
+                    price- <del>$72</del> $64
+                    <br>
+                    <br>
+                </div>
+
+                <div class="btn" id="btn">
+                    <button onclick="getValue()">
+                        Add to Card
+                    </button>
+
+                    <div class="btn" id="list">
+                        <button onclick="getList()">
+                            Add to wishlist
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://fakestoreapi.com/img/51UDEzMJVpL._AC_UL640_QL65_ML3_.jpg" alt="" class="card__img" />
+                <div class="contents">
+                    <h2 class="card__name">Pierced Owl Rose Gold Plated Stainless Steel Double</h2>
+
+                    <p>Rose Gold Plated Double Flared Tunnel Plug Earrings
+                        <span class="card__read-more"> Made of 316L Stainless Steel",
+                            "category":"jewelery</span>
+                    </p>
+                    <p class="read-more-btn">Read More..</p>
+                    <br>
+                    price- <del>$15</del> $10.99
+                    <br>
+                    <br>
+                </div>
+
+                <div class="btn" id="btn">
+                    <button onclick="getValue()">
+                        Add to Card
+                    </button>
+
+                    <div class="btn" id="list">
+                        <button onclick="getList()">
+                            Add to wishlist
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://fakestoreapi.com/img/71YAIFU48IL._AC_UL640_QL65_ML3_.jpg" alt="" class="card__img" />
+                <div class="contents">
+                    <h2 class="card__name">White Gold Plated Princess</h2>
+
+                    <p>Classic Created Wedding Engagement Solitaire Diamond Promise Ring for Her.
+                        <span class="card__read-more"> Gifts to spoil your love more for Engagement, Wedding,
+                            Anniversary, Valentine's Day..."</span>
+                    </p>
+                    <p class="read-more-btn">Read More..</p>
+                    <br>
+                    price- <del>$15</del> $9.99
+
+                    <br>
+                    <br>
+                </div>
+
+                <div class="btn" id="btn">
+                    <button onclick="getValue()">
+                        Add to Card
+                    </button>
+
+                    <div class="btn" id="list">
+                        <button onclick="getList()">
+                            Add to wishlist
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://fakestoreapi.com/img/61sbMiUnoGL._AC_UL640_QL65_ML3_.jpg" alt="" class="card__img" />
+                <div class="contents">
+                    <h2 class="card__name">Fjallraven - Solid Gold Petite Micropave</h2>
+
+                    <p>Satisfaction Guaranteed. Return or exchange any order within 30 days.Designed and sold by Hafeez
+                        Center in the United States.
+
+
+                        <span class="card__read-more"> Satisfaction Guaranteed. Return or exchange any order within 30
+                            days.</span>
+                    </p>
+                    <p class="read-more-btn">Read More..</p>
+                    <br>
+                    price- <del>$175</del> $168
+                    <br>
+                    <br>
+                </div>
+
+                <div class="btn" id="btn">
+                    <button onclick="getValue()">
+                        Add to Card
+                    </button>
+
+                    <div class="btn" id="list">
+                        <button onclick="getList()">
+                            Add to wishlist
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://fakestoreapi.com/img/71pWzhdJNwL._AC_UL640_QL65_ML3_.jpg" alt="" class="card__img" />
+                <div class="contents">
+                    <h2 class="card__name">Fjallraven - John Hardy Women's Legends Naga Gold & Silver Dragon Station
+                        Chain Bracelet</h2>
+
+                    <p>From our Legends Collection, the Naga was inspired by the mythical water dragon that protects the
+                        ocean's pearl.
+                        <span class="card__read-more"> Wear facing inward to be bestowed with love and abundance, or
+                            outward for protection."</span>
+                    </p>
+                    <p class="read-more-btn">Read More..</p>
+                    <br>
+                    price- <del>$710</del> $695
+                    <br>
+                    <br>
+                </div>
+
+                <div class="btn" id="btn">
+                    <button onclick="getValue()">
+                        Add to Card
+                    </button>
+
+                    <div class="btn" id="list">
+                        <button onclick="getList()">
+                            Add to wishlist
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg" alt="" class="card__img" />
+                <div class="contents">
+                    <h2 class="card__name">Mens Cotton Jacket</h2>
+
+                    <p>great outerwear jackets for Spring/Autumn/Winter, suitable for many occasions, such as working,
+                        hiking, camping, mountain/rock climbing, cycling, traveling or other outdoors.
+                        <span class="card__read-more"> you or your family member. A warm hearted love to Father, husband
+                            or son in this thanksgiving or
+                            Christmas Day.</span>
+                    </p>
+                    <p class="read-more-btn">Read More..</p>
+                    <br>
+                    price- <del>$62</del> $55.99
+                    <br>
+                    <br>
+                </div>
+
+                <div class="btn" id="btn">
+                    <button onclick="getValue()">
+                        Add to Card
+                    </button>
+
+                    <div class="btn" id="list">
+                        <button onclick="getList()">
+                            Add to wishlist
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_.jpg" alt="" class="card__img" />
+                <div class="contents">
+                    <h2 class="card__name">Mens Casual Slim Fit</h2>
+
+                    <p>The color could be slightly different between on the screen and in practice.
+                        <span class="card__read-more"> Please note that body builds vary by person, therefore,
+                            detailed size information should be reviewed below on the product description"</span>
+                    </p>
+                    <p class="read-more-btn">Read More..</p>
+                    <br>
+                    price- <del>$20</del>$15.99
+                    <br>
+                    <br>
+                </div>
+
+                <div class="btn" id="btn">
+                    <button onclick="getValue()">
+                        Add to Card
+                    </button>
+
+                    <div class="btn" id="list">
+                        <button onclick="getList()">
+                            Add to wishlist
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+    </div>
+    <script src="ecomm.js"></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</body>
+
+</html>
